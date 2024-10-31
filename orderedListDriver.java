@@ -1,3 +1,5 @@
+import java.util.Iterator;
+
 public class orderedListDriver {
     public static void main(String[] args) {
      
@@ -49,5 +51,12 @@ public class orderedListDriver {
 
         
         System.out.println("Final list: " + list.toString());
+
+      Iterator<Integer> iterator = list.iterator();
+
+      while(iterator.hasNext()){
+        Integer element = iterator.next();
+        System.out.println(element);
+      }
     }
 }
